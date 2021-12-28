@@ -11,8 +11,8 @@ if (Notification.permission !== "granted") {
 Notification.requestPermission();
 }
  else{
-var notification = new Notification('hello', {
-  body: "Hey there!",
+var notification = new Notification('Hallo', {
+  body: "Anda sudah menemukan fitur spesial notifikasi. Selamat, Ya!",
 });
 notification.onclick = function () {
   window.open("http://google.com");
