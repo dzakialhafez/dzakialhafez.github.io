@@ -1,0 +1,24 @@
+<!DOCTYPE html> 
+<html> 
+<body> 
+
+<button onclick="myFunction()" type="button">Get the number of available audio tracks</button>
+<br><br>
+
+<video id="myVideo" width="320" height="176" controls>
+  <source src="The Panturas - Sunshine.mp4" type="video/mp4">
+  <source src="mov_bbb.ogg" type="video/ogg">
+  Your browser does not support HTML5 video.
+</video>
+
+<script>
+var vid = document.getElementById("myVideo");
+function myFunction() { 
+  alert(vid.audioTracks.length);
+} 
+</script> 
+
+<p>Video courtesy of <a href="https://youtu.be/kD2Gsp9EB8k" target="_blank">The Panturas</a>.</p>
+
+</body> 
+</html>
